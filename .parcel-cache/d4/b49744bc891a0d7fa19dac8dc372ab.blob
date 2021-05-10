@@ -1,0 +1,14 @@
+var _modelsUser = require("./models/User");
+const user = new _modelsUser.User({
+  name: "Núria Solé",
+  age: 28
+});
+user.on("change", () => {
+  console.log(user);
+});
+user.on("save", () => {
+  console.log(user.attributes);
+});
+user.on("error", () => {
+  console.log("There was an error");
+});

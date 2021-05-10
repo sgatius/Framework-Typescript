@@ -1,0 +1,17 @@
+var _modelsUser = require("./models/User");
+const user = new _modelsUser.User({
+  name: "Anna",
+  age: 30
+});
+user.attributes.get("id");
+user.attributes.get("name");
+user.attributes.get("age");
+user.on("change", () => {
+  console.log("User was changed");
+});
+console.log(user.get("name"));
+console.log(user.get("age"));
+user.set({
+  age: 28
+});
+console.log(user.get("age"));

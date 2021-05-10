@@ -1,0 +1,16 @@
+var _modelsUser = require("./models/User");
+const user = _modelsUser.User.buildBuild({
+  id: 3,
+  name: "Núria Solé",
+  age: 28
+});
+user.on("change", () => {
+  console.log(user);
+});
+user.on("save", () => {
+  console.log(user);
+});
+user.on("error", () => {
+  console.log("There was an error");
+});
+user.save();

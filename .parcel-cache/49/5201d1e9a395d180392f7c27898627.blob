@@ -1,0 +1,9 @@
+var _modelsUser = require("./models/User");
+var _ViewsUserForm = require("./Views/UserForm");
+const userForm = new _ViewsUserForm.UserForm(document.getElementById("root"));
+userForm.render();
+const collection = _modelsUser.User.buildUserCollection();
+collection.on("change", () => {
+  console.log(collection.models);
+});
+collection.fetch();

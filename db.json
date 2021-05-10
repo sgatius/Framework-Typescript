@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "name": "Santiago",
+      "age": 28,
+      "id": 1
+    },
+    {
+      "name": "Xavier",
+      "age": 28,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Núria Solé",
+      "age": 28
+    },
+    {
+      "name": "Anna",
+      "age": 30,
+      "id": 4
+    },
+    {
+      "name": "Núria Solé",
+      "age": 28,
+      "id": 5
+    },
+    {
+      "name": "My Name",
+      "age": 45,
+      "id": 6
+    },
+    {
+      "name": "My Name",
+      "age": 45,
+      "id": 7
+    },
+    {
+      "name": "Pedro",
+      "age": 28,
+      "id": 8
+    }
+  ]
+}

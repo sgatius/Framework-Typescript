@@ -1,0 +1,20 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "User", function () {
+  return User;
+});
+var _Eventing = require("./Eventing");
+var _Sync = require("./Sync");
+class User {
+  events = new _Eventing.Eventing();
+  sync = new _Sync.Sync();
+  constructor(data) {
+    this.data = data;
+  }
+  get(propName) {
+    return this.data[propName];
+  }
+  set(update) {
+    Object.assign(this.data, update);
+  }
+}
